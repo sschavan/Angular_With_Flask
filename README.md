@@ -64,6 +64,7 @@ For deployment : https://angular.io/guide/deployment
  $ cd ~/App/Angular
  
  $ http-server
+ 
  Available on:
   http://127.0.0.1:8080
   http://172.31.25.851:8080
@@ -77,6 +78,7 @@ For deployment : https://angular.io/guide/deployment
  $ mkdir server
  
  $  ls App
+ 
       Angular  server
 	  
  $ cd server/
