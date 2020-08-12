@@ -8,8 +8,8 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/users/*": {"origins": "*"}})
 app.config["DEBUG"] = True
 
-HOST = '172.45.200.50'
-DATABASE = 'otrs'
+HOST = '<Server IP>'
+DATABASE = '<DB Name>'
 USER = "demo"
 PASSWORD = "Password@1"
 
