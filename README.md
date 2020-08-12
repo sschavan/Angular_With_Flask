@@ -25,13 +25,21 @@ For deployment : https://angular.io/guide/deployment
  $ sudo systemctl restart mysql
  
  $ sudo /usr/bin/mysql -u root -p
-     UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root';
-     FLUSH PRIVILEGES;
+ 
+     	 UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root';
+     
+     	 FLUSH PRIVILEGES;
+     
 	 CREATE USER 'demo'@'localhost' IDENTIFIED BY 'Password@1';
+	 
 	 GRANT ALL PRIVILEGES ON *.* TO 'demo1'@'localhost' WITH GRANT OPTION;
+	 
 	 CREATE USER 'demo1'@'IP' IDENTIFIED BY 'Password@12';
+	 
 	 GRANT ALL PRIVILEGES ON *.* TO 'demo1'@'IP'  WITH GRANT OPTION;
+	 
 	 FLUSH PRIVILEGES;
+	 
 	 CREATE DATABASE db_name;
 	 create table demousers(
 	 id INT NOT NULL AUTO_INCREMENT,
