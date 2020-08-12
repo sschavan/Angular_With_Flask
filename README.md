@@ -30,13 +30,10 @@ For deployment : https://angular.io/guide/deployment
      
      	 FLUSH PRIVILEGES;
      
-	 CREATE USER 'demo'@'localhost' IDENTIFIED BY 'Password@1';
-	 
-	 GRANT ALL PRIVILEGES ON *.* TO 'demo1'@'localhost' WITH GRANT OPTION;
-	 
-	 CREATE USER 'demo1'@'IP' IDENTIFIED BY 'Password@12';
-	 
-	 GRANT ALL PRIVILEGES ON *.* TO 'demo1'@'IP'  WITH GRANT OPTION;
+	mysql> CREATE USER 'demo'@'localhost' IDENTIFIED BY 'Password@1';
+	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'localhost' WITH GRANT OPTION;
+	mysql> CREATE USER 'demo'@'IP' IDENTIFIED BY 'Password@1';
+	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'IP'  WITH GRANT OPTION;;
 	 
 	 FLUSH PRIVILEGES;
 	 
