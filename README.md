@@ -66,7 +66,10 @@ For deployment : https://angular.io/guide/deployment
  
  Note** Edit  main.js file 
  
-  Give Server ip (like  18.191.201.177:3000)
+
+       ("http://18.191.201.177:3000/users", user); # Change This IP to your server ip
+
+
  
  $ http-server
  
@@ -89,6 +92,12 @@ For deployment : https://angular.io/guide/deployment
  $ cd server/
  
  $ mv ~/Angular/Test.py to server/
+ 
+ ##Note** Edit Test.py file
+ 	HOST = '172.31.25.85' #give server ip
+	
+	host="172.31.25.85" #give server ip
+
  
  $ python Test.py
 
