@@ -25,19 +25,20 @@ For deployment : https://angular.io/guide/deployment
  $ sudo systemctl restart mysql
  
  $ sudo /usr/bin/mysql -u root -p
- 
-     	 UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root';
-     
-     	 FLUSH PRIVILEGES;
-     
+      
 	mysql> CREATE USER 'demo'@'localhost' IDENTIFIED BY 'Password@1';
+	
 	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'localhost' WITH GRANT OPTION;
+	
 	mysql> CREATE USER 'demo'@'IP' IDENTIFIED BY 'Password@1';
-	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'IP'  WITH GRANT OPTION;;
+	
+	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'IP'  WITH GRANT OPTION;
+	
 	 
 	 FLUSH PRIVILEGES;
 	 
 	 CREATE DATABASE db_name;
+	 
 	 create table demousers(
 	 id INT NOT NULL AUTO_INCREMENT,
 	 name VARCHAR(50) NOT NULL,
@@ -62,6 +63,10 @@ For deployment : https://angular.io/guide/deployment
  $ sudo git clone https://github.com/biswajit1987/Angular_With_Flux.git
  
  $ cd ~/App/Angular
+ 
+ Note** Edit  main.js file 
+ 
+  Give Server ip (like  18.191.201.177:3000)
  
  $ http-server
  
