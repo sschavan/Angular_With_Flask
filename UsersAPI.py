@@ -9,7 +9,7 @@ cors = CORS(app, resources={r"/": {"origins": "*"}})
 #app.config["DEBUG"] = True
 CORS(app,support_credentials=True)
 
-HOST = '172.31.25.85'
+HOST = 'public ip'
 DATABASE = 'db_name'
 USER = "demo1"
 PASSWORD = "Password@1"
@@ -199,4 +199,4 @@ def update():
 #app.run()
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="172.31.25.85", port=5000)
+    serve(app, host="public ip", port=5000)
