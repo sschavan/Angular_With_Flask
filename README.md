@@ -30,9 +30,9 @@ For deployment : https://angular.io/guide/deployment
 	
 	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'localhost' WITH GRANT OPTION;
 	
-	mysql> CREATE USER 'demo'@'public ip' IDENTIFIED BY 'Password@1';
+	mysql> CREATE USER 'demo'@'ip' IDENTIFIED BY 'Password@1';
 	
-	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'public ip'  WITH GRANT OPTION;
+	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'ip'  WITH GRANT OPTION;
 	
 	 
 	 FLUSH PRIVILEGES;
@@ -94,9 +94,9 @@ For deployment : https://angular.io/guide/deployment
  $ mv ~/Angular/UsersAPI.py to server/
  
  ##Note** Edit UsersAPI.py file
- 	HOST = 'public ip' #give DB ip
+ 	HOST = 'ip' #give DB ip
 	
-	host="public ip" #give server ip
+	host="ip" #give server ip
 
  
  $ python UsersAPI.py
