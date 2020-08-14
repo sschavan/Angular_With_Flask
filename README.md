@@ -30,9 +30,9 @@ For deployment : https://angular.io/guide/deployment
 	
 	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'localhost' WITH GRANT OPTION;
 	
-	mysql> CREATE USER 'demo'@'IP' IDENTIFIED BY 'Password@1';
+	mysql> CREATE USER 'demo'@'public ip' IDENTIFIED BY 'Password@1';
 	
-	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'IP'  WITH GRANT OPTION;
+	mysql> GRANT ALL PRIVILEGES ON *.* TO 'demo'@'public ip'  WITH GRANT OPTION;
 	
 	 
 	 FLUSH PRIVILEGES;
@@ -67,7 +67,7 @@ For deployment : https://angular.io/guide/deployment
  Note** Edit  main.js file 
  
 
-       ("http://18.191.201.177:3000/users", user); # Change This IP to your server ip
+       ("http://public ip:5000/users", user); # Change public ip to your server public ip
 
 
  
@@ -91,12 +91,12 @@ For deployment : https://angular.io/guide/deployment
 	  
  $ cd server/
  
- $ mv ~/Angular/Test.py to server/
+ $ mv ~/Angular/UsersAPI.py to server/
  
  ##Note** Edit UsersAPI.py file
- 	HOST = '172.31.25.85' #give DB ip
+ 	HOST = 'public ip' #give DB ip
 	
-	host="172.31.25.85" #give server ip
+	host="public ip" #give server ip
 
  
  $ python UsersAPI.py
