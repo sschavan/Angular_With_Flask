@@ -67,7 +67,7 @@ For deployment : https://angular.io/guide/deployment
  Note** Edit  main.js file 
  
 
-       ("http://public ip:5000/users", user); # Change public ip to your server public ip
+       ("http://ip:5000/users", user); # Change ip to your server ip
 
 
  
