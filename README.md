@@ -93,13 +93,13 @@ For deployment : https://angular.io/guide/deployment
  
  $ mv ~/Angular/Test.py to server/
  
- ##Note** Edit Test.py file
- 	HOST = '172.31.25.85' #give server ip
+ ##Note** Edit UsersAPI.py file
+ 	HOST = '172.31.25.85' #give DB ip
 	
 	host="172.31.25.85" #give server ip
 
  
- $ python Test.py
+ $ python UsersAPI.py
 
  $ sudo chmod -R 777 App #Give full permission to App Folder
  
