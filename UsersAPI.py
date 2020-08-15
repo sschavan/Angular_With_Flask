@@ -9,10 +9,10 @@ cors = CORS(app, resources={r"/": {"origins": "*"}})
 #app.config["DEBUG"] = True
 CORS(app,support_credentials=True)
 
-HOST = '<DB_SERVER>'
-DATABASE = 'db_name'
-USER = "demo1"
-PASSWORD = "Password@1"
+HOST = '172.31.31.20'
+DATABASE = 'db_first'
+USER = "demo2"
+PASSWORD = "Password@123"
 
 
 def dict_factory(cursor, row):
@@ -199,4 +199,4 @@ def update():
 #app.run()
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="<WEB_SERVER>", port=5000)
+    serve(app, host="172.31.31.20", port=5000)
