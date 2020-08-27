@@ -507,16 +507,16 @@ class CommonService {
         this._http = _http;
     }
     createUser(user) {
-        return this._http.post("http://18.217.251.200:5000/users", user);
+        return this._http.post("http://18.222.237.223:5000/users", user);
     }
     getAllUser() {
-        return this._http.get("http://18.217.251.200:5000/users/all");
+        return this._http.get("http://18.222.237.223:5000/users/all");
     }
     updateUser(user) {
-        return this._http.put("http://18.217.251.200:5000/users?" + user.id, user);
+        return this._http.put("http://18.222.237.223:5000/users?" + user.id, user);
     }
     deleteUser(user) {
-        return this._http.delete("http://18.217.251.200:5000/users?id=" + user.id);
+        return this._http.delete("http://18.222.237.223:5000/users?id=" + user.id);
     }
 }
 CommonService.ɵfac = function CommonService_Factory(t) { return new (t || CommonService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
